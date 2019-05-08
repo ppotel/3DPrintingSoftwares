@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu',cursive, sans-serif;
+	font-size: 15px;
+	background-color: lightGray;
+}
+
+q{
+	font-style: italic;
+	font-weight: bold;
+}
+
+p{
+	text-align: justify;
+	text-indent: 5em;
+	
+}
+
+a {
+	font-size: 12px;
+}
+
+img {
+	display:block;
+	border: solid 1px black ;
+	border-radius: 10px;
+	
+	margin:0.5em 0;
+}
+
+#software_trend_image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 7.5px 3.75px 3.75px darkred;
+}
+
+#acteurs_merged{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 7.5px 3.75px 3.75px darkred;
+}
+
+#illustration_STL{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 7.5px 3.75px 3.75px darkred;
+}
+
+#coffee_cao, #coffee_sliced{
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 7.5px 3.75px 3.75px darkblue;
+}
+
+#extrusion_matiere{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	max-width: 500px;
+	box-shadow: 7.5px 3.75px 3.75px darkgray;
+}
+
+figure{
+	margin : 1em 0em;
+}
+
+figcaption {
+	text-align: center;
+	font-style:italic;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+article{
+	padding: 0.5em 10%;
+	border-top: solid 0.5px black;
+	border-bottom: solid 0.5px black;
+}
+
+
+ol{
+	padding: 0.5em 20%; 
+	list-style-position: inside;
+}
+li{
+	padding :0.1em;
+}
+
+
+
+h1{
+	text-align: center;
+	padding: 0.5em;
+}
+
+h2{
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+h3{
+	padding: 0.5em 25%;
+}
+
+
+header{
+	background-color: dimgray;
+	color: white;
+	border-bottom: solid 2.5px black;
+}
+
+article:nth-child(1){
+	background-color: gold;
+
+
+}
+
+article:nth-child(2){
+	background-color: darkblue;
+	color:white;
+
+}
+
+article:nth-child(3){
+	background-color: lemonchiffon;
+
+}
+
+article:nth-child(4){
+	background-color: darkred;
+	color:white;
+	padding-bottom: 50px;
+
+}
+
+#avantages{
+	padding : 0.25em 3em;
+}
+
+#etapes li{
+	font-weight: bold;
+}
+
+footer{
+	border-top: solid 1px black;
+	display: flex;
+	position:fixed;
+	bottom: 0;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.25em;
+	width:100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer img{
+	margin : 0;
+	border : none;
+	width:10%;
+	height: 10%;
+}
+

@@ -1,0 +1,116 @@
+<doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homepage</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Les logiciels pour fabrication additive</h1>
+	  		<h2>Compte rendu de veille technologique</h2>
+		</header>
+		<nav></nav>
+		<main>
+			<article>
+				<h3>Introduction</h3>
+				<p>La Fabrication Additive (FA par la suite), plus communement appelée impression 3D, est une révolution pour l'industrie. Bien que certains concept sont apparus dès les années 1900, les progrès technologiques permettent aujourd'hui à l'industrie et au particulier d'aborder ces techniques. Cependant, les premières définition normatives arrivent dans les années 2000, avec par exemple la définition de l'ASTM :</p>
+				<p>Additive manufacturing is the <q>process of joining materials to make objects from 3D model data, usually upon layer by layer</q> - <a href="https://www.astm.org/Standards/F2792.htm">ASTM (2012) F2792-12a Standard terminology for additive manufacturing technologies</a></p>
+				<figure>
+					<img id= "coffee_cao" src="images/imageCAO.png" alt="Coffee mug CAO">
+					<figcaption>Modélisation CAO d'un tasse à café</figcaption>
+				</figure>
+				<figure>
+					<img id= "coffee_sliced" src="images/imageCAO2.png" alt="Coffee mug sliced">
+					<figcaption>Définitions des couches d'impression pour différentes épaisseurs</figcaption>
+				</figure> 
+				<p>Dans de larges domaines, les technologies développées permettent de nombreux avantages, dont voici les principaux : </p>
+				<ol id="avantages">
+					<li>La FA est un processus « rapide » de manufacture</li>
+					<li>Elle réduit drastiquement le nombre d’étape d'un processus de fabrication.</li>
+					<li>Elle réduit également le nombre de ressources nécessaires.</li>
+					<li>C'est un processus simple.</li>
+					<li>Elle allège les prix globaux (Temps de production, réduction du buy-to-fly ratio).</li>
+					<li>Elle permet la résolution d’anciens problèmes associés aux méthodes de production classiques.</li>
+					<li>Elle a la capacité de fabriquer des composants multi matériaux.</li>
+					<li>Les pièces proposées sont personnalisables.</li>
+				</ol>
+			</article>
+			
+			<article>
+				<h3>La fabrication additive et ses logiciels</h3>
+				<p>Toute fabrication additive est aujourd'hui composée de 8 étapes indépendantes.</p>
+				<ol id="steps" start="1">
+					<li><strong>Conceptualisation et CAO</strong></li>
+					<li><strong>Conversion en STL</strong></li>
+					<li><strong>Transfert aux imprimantes et manipulation de STL</strong></li>
+					<li><strong>Paramétrage de la machine de fabrication additive</strong></li>
+					<li>Fabrication</li>
+					<li>Enlevage</li>
+					<li>Post-process</li>
+					<li>Application</li>
+				</ol>
+				<p>Les quatre premières étapes sont des étapes logiciels, dont voici le détail et leurs enjeux :</p>
+				<br>
+				<p><strong>Conceptualisation et CAO :</strong> Cette étape comprend la construction du modèle 3D à partir d'une idée de design, qui répond aux exigences de fonction et d'apparence.</p>
+				<br>
+				<p><strong>Conversion en STL : </strong>Le modèle 3D est convertit en un format standard, le STL, pour STereoLithography, inventé par 3D System. Cette conversion est généralement automatique et réalisée par les logiciels de CAO. La correction des erreurs de convertion peut se faire par des logiciels de réparation des STL, Materialise MAGICS par exemple.</p>
+				<figure>
+					<img id= "illustration_STL" src="images/illustration_STL.jpg" alt="exemple de segmentation STL">
+					<figcaption>Visualisation d'un fichier STL et des facettes par lesquelles le volume est représenté</figcaption>
+				</figure>
+				<p><strong>Transfert aux imprimantes et manipulation de STL :</strong> le bon fonctionnement de l'importatin est vérifié, la pièce est orientée et localisée (réglagle de l'origine).</p>
+				<br>
+				<p><strong>Paramétrage/programmation de la machine de fabrication additive :</strong> Les différents paramètres sont appliqués (Epaisseur des couches, vitesses, puissance, distance d'impression, fonctions de remplissage, etc...</p>
+				<figure>
+					<img id="acteurs_merged" src="images/acteurs_merged.png" alt="Liste non exhaustive des acteurs sur le marché des logiciels 3D pour fabrication additive">
+					<figcaption>Différents acteurs du marché du logiciel 3D pour fabrication additive</figcaption>
+				</figure> 
+
+				<p>Historiquement, ces acteurs se sont développés en se consacrant sur une étape du processus. Par exemple, Solidworks s'est d'abord développé pour la CAO uniquement. Aujour'hui, une nouvelle tendance emerge, les solutions all-in-one. Ces solutions intégrées permettraient, à terme, de réunir les 4 étapes logiciel de la fabbrication additive sur une seule plateforme. Si l'avantage commercial visé par les gros acteurs est certain, de telles platerformes représenteraient un sérieux atout pour l'ingénieur de demain.<br>
+				Sur le modèle de l'intégration de la simulation numérique dans les étapes de conception, le plus souvent par des modules d'analyses statiques, dynamiques, ou multiphysiques, les acteurs aimeraient saisir et intégrer les contraintes de la fabbrication additive dès les premières phases des projets des bureaux d'étude d'aujourd'hui. </p>
+
+				<figure>
+					<img id="software_trend_image" src="images/software_trend.png" alt="3D Softwares present trend">
+					<figcaption>Nouvelle tendance des logiciels 3D</figcaption>
+				</figure> 
+				
+			</article>
+			<article>
+				<h3>Focus sur l'extrusion de matière</h3>
+				<p>Dans le cadre de cette veille trechnologique, un focus sur les technologies à extrusion de matière est proposé.</p>
+				<br>
+				<p><strong>Définition :</strong> Les systèmes à extrusion de matière sont des systèmes de fabrications additives dans lesquels la matière est dispensée spécifiquement (localement) à travers un orifice ou embout.</p>
+				<p>Les sytèmes à extrusion de matière travaillent principalement des polymères et des tissus biologiques. La matière première est forcé à travers l'embout par pression, et son extrusion de fait dans un état semi-solide. Pour former une pièce unique, la matière doit se solidifier en gardant sa forme, et se lier à la matière précedemment deposée et déjà solidifiée.</p>
+				<figure>
+					<img id="extrusion_matiere" src="images/extrusion_matiere.png" alt="Système d'extrusion de matière">
+					<figcaption>Schéma d'un système à extrusion de matière</figcaption>
+				</figure>
+				<p>Le détail du fonctionnement de cette technologie permet d'en souligner les paramètres de mise en oeuvre :</p>
+				<br>
+				<ul>
+					<li>Le matériau est chargé puis liquéfié en chambre si besoin. Il peut être introduit sous forme de pastille, de poudre ou de filament.</li>
+					<li>Lors de l'extrusion, la pression de l'extrusion et sa vitesse peuvent être paramétrées et suivies pour contrôler l'épaisseur de chaque couche.</li>
+					<li>Lors de la solidification, la rétractation du matériau et les contraintes thermales résiduelles influent sur la forme et la taille du matériau extrudé.</li>
+					<li>Le contrôle de la position de l'embout se fait par la définition d'une trajectoire au préalable.</li>
+					<li>Le paramétrage de la fusion du matériau est essentielle car. En effet, une chaleur insuffisante causerait un manque d'adhérence inter- et intra-couches et pourrait provoquer des fractures dans la pièce. Au contraire, une chaleur trop importante entraine une trop grande fluidité du matériau et une pauvre définition de la pièce à réaliser.</li>	
+				</ul>
+				<br>
+				<p>Tous ces paramètres doivent être pris en compte pour obtenir une pièce satisfaisant des exigences fonctionnelles. Aujourd'hui, les imprimantes par extrusion de matière offrent un contrôle plus ou moins limité sur ces paramètres. Souvent, dans un soucis d'ouverture vers des publics moins avisés, certains aspects sont imposés ou paramétrés par défaut. De plus, les plages de fonctionnement sont machine-dépendante, c'est à dire qu'une imprimante sera dédiée et optimisé pour une impression paramétrée particulière. Les logiciels dédiés sont alors souvent la solution la plus rapide pour garantir un bon fonctionnement de l'outil de production.</p>
+				<p>Pourtant, avec l'industriualisation de ces technologies, de nouvelles tendances emmergent, avec notamment l'apparition de "plug-in" de plus en plus nombreux pour des logiciels professionels de CAO.</p>
+			</article>
+			<article>
+				<h3>Des réponses en devenir</h3>
+				<p>Comme évoqué précedemment, les fabricants d'équipement d'origine dévellopent des outils de préparation spécifiques à leur machine, garantissant une intégration maximale et une utilisation optimale de leur machine. Une nouvelle tendance semble cependant se dégager, avec les leaders CAO cherchant à introduire des options « Direct to 3D print » dans leurs logiciels comme avantage compétitif et commerciaux.</p>
+				<p>Pourtant, l'opposition de ces deux modes de conception a vu emmerger une nouvelle gamme de logiciels, appelés logiciels tiers, qui se développent pour répondre à la large gamme d’applications et des processus à mettre en œuvre. C’est le marché qui devrait grandir le plus dans les années à venir. En effet la capacité d'adaptation de ce nouveau type de logiciel pourrait permettrent un accès simplifié aux différentes technologies d'impression 3D, sans brider les concepteurs.</p>
+				<p> Cette veille sera poursuivie par la conception d'un outil d'aide à la décision quant au choix d'un logiciel d'impression 3D. Celui-ci devrait se présenter sous forme d'un questionnaire opensource, où les sorties (les recommandations) évolueraient constamment, pour rester à jour. A terme, cet outil pourrait intégrer une fonctionnalité d'aide au choix d'une technologie d'impression 3D et de paramétrage.</p>
+			</article>
+		</main>
+		<footer>
+			<p>Paul POTEL</p>
+			<p>Veille technologique - MOS 4.4</p>
+			<img id="logo_ecl" src="images/logo_ecl.png" alt="logo_ecl">
+		</footer>
+	</body>
+</html>
